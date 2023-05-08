@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    position: relative;
+    padding-bottom: 3em;
+    min-height: 100vh;
+}
+/* seccion NAV */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+  .navbar-nav .nav-link:hover {/* modif ver porque no funciona */
+    color: red;
+  }
+
+  /* seccion busqueda */
+  .container {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    
+  }
+  
+  .caja-busqueda {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  
+/* SECCION FUNCIONALEIDADS */
+ #funcionalidades {
+    padding: 15px 15px;
+    text-align: center;
+    background-color: #f3f3f3;
+   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0.9)), url("/img/fondo-padel.jpg");
+
+    background-size: cover;
+    background-position: center center;
+   
+}
+
+#funcionalidades .fila {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1450px;
+    margin: 20px auto;
+}
+#funcionalidades .fila .funcionalidades {
+    width: 350px;
+    background-color: #fff;
+    padding: 25px;
+    margin-top:  10px;
+    border-radius: 5px;
+    transition: .5s;
+}
+#funcionalidades .fila .funcionalidades:hover {
+    box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+}
+#funcionalidades .fila .funcionalidades h4 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+#funcionalidades .fila .funcionalidades hr {
+    width: 30%;
+    margin: auto;
+    color: #000;
+    margin-bottom: 25px;
+}
+#funcionalidades .fila .funcionalidades ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+#funcionalidades .fila .funcionalidades p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+
+/* seccion CONTACTO */
+#contacto {
+    padding: 100px 15px;
+    background-color: #f3f3f3;
+}
+#contacto .titulo-seccion {
+    margin-bottom: 20px;
+}
+#contacto .contenedor-form {
+    max-width: 1100px;
+    margin: auto;
+}
+#contacto .contenedor-form .fila {
+    margin-bottom: 15px;
+}
+#contacto .contenedor-form .mitad {
+    display: flex;
+    justify-content: space-between;
+}
+#contacto .contenedor-form input,
+#contacto .contenedor-form textarea {
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid #919191;
+}
+#contacto .contenedor-form .mitad input {
+    width: 48%;
+}
+#contacto .contenedor-form .input-full {
+    width: 100%;
+}
+#contacto .titulo-seccion {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+#contacto .btn-enviar {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: .5s;
+    padding: 10px 15px !important;
+}
+#contacto .btn-enviar:hover {
+    background-color:red;
+    color: #fff;
+}
+
+
+
+ /* seccion FOOTER */       
+ footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+
+  
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+      
+        
+  
+      
+}
+footer a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
+    font-size: 26px;
+    text-align: center;
+}
+.footer-parrafo{
+    display: inline-block;
+}
+
+
+/* login */
+.background-image {
+    background-image: url('/img/asdasdads.jpg');
+  }
+  
+  #radius-shape-1 {
+    height: 220px;
+    width: 220px;
+    top: -60px;
+    left: -130px;
+    background: radial-gradient(#44006b, #ad1fff);
+    overflow: hidden;
+  }
+
+  #radius-shape-2 {
+    border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+    bottom: -60px;
+    right: -110px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(#44006b, #ad1fff);
+    overflow: hidden;
+  }
+
+  .bg-glass {
+    background-color: hsla(0, 0%, 100%, 0.9) !important;
+    backdrop-filter: saturate(200%) blur(25px);
+  }
+.texto-login{
+    color: hsl(218, 81%, 85%)
+}
+      
+
+
+
+/* seccion RESPONSIVE */
+@media screen and (max-width: 800px) {
+     /* seccion estudios */
+     #funcionalidades {
+        padding: 50px 10px;
+    }
+    #funcionalidades .fila {
+        display: inline-block;
+    }
+    #funcionalidades .fila .proyecto {
+        margin: auto 50%;
+    }
+    .carousel-item {
+        height: calc(350vw / 3);
+      }
+      .carousel-item img {
+        object-fit: cover;
+        height: 100%;
+      }
+      .carousel-caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 1rem;
+        color: #fff;
+        text-align: center;
+      }
+      .carousel-caption h5 {
+        font-size: 1.5rem;
+      }
+      .carousel-caption p {
+        font-size: 1rem;
+      }
+    }
+    
